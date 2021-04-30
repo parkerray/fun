@@ -1,5 +1,5 @@
 function logThis() {
-    console.log(document.getElementById("input"));
+    console.log(document.getElementById("input").value);
 }
 
 document.getElementById("button").addEventListener("click", logThis);
