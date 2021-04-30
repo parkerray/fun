@@ -3,3 +3,5 @@ function logThis() {
 }
 
 object.addEventListener("click", logThis);
+
+//This is a lot of fun
