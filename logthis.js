@@ -21,3 +21,5 @@ function buttonIncrease(currentCount) {
     buttonCount = currentCount + 1;
     document.getElementById("button-text").innerHTML = `You've pressed my buttons ${buttonCount} times. Refresh to reset!`;
 }
+
+//Testing a commit
