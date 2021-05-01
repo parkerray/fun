@@ -1,6 +1,3 @@
-//Alerts the visitor
-alert(`hello there!`);
-
 //Logs the input to the console
 function logThis() {
     console.log(document.getElementById("input").value);
