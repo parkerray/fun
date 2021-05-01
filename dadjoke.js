@@ -13,5 +13,6 @@ function newDadJoke() {
 function getJoke() {
     fetch('https://icanhazdadjoke.com/')
     .then(response => response.json())
+    .then(data => console.log(data))
     .then(data => document.getElementById("joke-text").innerHTML = data.vaule);
 }
