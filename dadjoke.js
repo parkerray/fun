@@ -11,8 +11,10 @@ function newDadJoke() {
 
 //Fetches joke from icanhazdadjoke
 function getJoke() {
-    fetch('https://icanhazdadjoke.com/')
+    fetch('https://icanhazdadjoke.com/', {
+        method: 'GET',
+        headers: {'Accept' : 'application/json'}
+    })
     .then(response => response.json())
-    .then(data => console.log(data))
-    .then(data => document.getElementById("joke-text").innerHTML = data.vaule);
+    .then(data => document.getElementById("joke-text").innerHTML = data.joke);
 }
