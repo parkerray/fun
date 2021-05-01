@@ -11,7 +11,7 @@ document.getElementById("button").addEventListener("click", logThis);
 
 //Logs the input to the console with "Parker says " in front
 function makeParkerSay() {
-    console.log(`Parker says ${document.getElementById("input").value}`);
+    console.log(`Parker says "${document.getElementById("input").value}"`);
     buttonIncrease(buttonCount);
 }
 
