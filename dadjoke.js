@@ -15,3 +15,5 @@ function getJoke() {
     .then(response => response.json())
     .then(data => document.getElementById("joke-text").innerHTML = data.vaule);
 }
+
+//Trying to get this to work - ignore
