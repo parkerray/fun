@@ -22,12 +22,7 @@ function getJoke() {
 
 //Fetches GIF from GIPHY
 function getGif() {
-    fetch('https://api.giphy.com/v1/gifs/random?api_key=OOtTNV3LEuSif3QNu7hCcHWoJwGAWgXE', {
-        headers: {
-            tag: 'laughing',
-            rating: 'g'
-        }
-    })
+    fetch('https://api.giphy.com/v1/gifs/random?api_key=OOtTNV3LEuSif3QNu7hCcHWoJwGAWgXE&tag=laughing&rating=g')
     .then(response => response.json())
     .then(data => document.getElementById("gif").style.backgroundImage = `url(${data.data.image_url})`);
 }
