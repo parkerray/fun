@@ -23,7 +23,7 @@ function getJoke() {
 //Fetches GIF from GIPHY
 function getGif() {
     fetch('https://api.giphy.com/v1/gifs/random?api_key=OOtTNV3LEuSif3QNu7hCcHWoJwGAWgXE', {
-        tag: 'dad',
+        tag: 'laughing',
         rating: 'g'
     })
     .then(response => response.json())
